@@ -14,7 +14,7 @@ for comment in subreddit.stream.comments():
     comment_lower_list = comment_lower.split(" ")
     try:
         if "im" in comment_lower_list:
-            trigger_loc = comment_lower.find("im") + 3
+            trigger_loc = comment_lower.find("im ") + 3
             end_loc = comment_lower.find(".", trigger_loc)
             if end_loc == -1:
                 end_loc = comment_lower.find("\n", trigger_loc)
@@ -25,7 +25,7 @@ for comment in subreddit.stream.comments():
             else:
                 comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
         elif "i'm" in comment_lower_list:
-            trigger_loc = comment_lower.find("i'm") + 4
+            trigger_loc = comment_lower.find("i'm ") + 4
             end_loc = comment_lower.find(".", trigger_loc)
             if end_loc == -1:
                 end_loc = comment_lower.find("\n", trigger_loc)
