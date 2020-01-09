@@ -1,2 +1,2 @@
 web: python server.py
-worker: python jax.py
+worker: python reddit_bot.py
