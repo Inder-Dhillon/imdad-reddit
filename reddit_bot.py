@@ -29,7 +29,7 @@ for comment in subreddit.stream.comments():
                 else:
                     comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
                 requests.get(url='https://imdadbot.herokuapp.com/')
-                time.sleep(120)
+                time.sleep(1200)
 
 
             elif "i'm" in comment_lower_list:
@@ -44,7 +44,7 @@ for comment in subreddit.stream.comments():
                 else:
                     comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
                 requests.get(url='https://imdadbot.herokuapp.com/')
-                time.sleep(120)
+                time.sleep(1200)
                 
         except:
             pass
