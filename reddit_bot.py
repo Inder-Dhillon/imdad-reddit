@@ -12,6 +12,8 @@ reddit = praw.Reddit(client_id=environ['REDDIT_ID'],
 subreddit = reddit.subreddit("all")  # subreddits
 
 for comment in subreddit.stream.comments():
+    requests.get(url='https://imdadbot.herokuapp.com/')
+    time.sleep(300)
     if reddit.user.me() != comment.author.name:
         comment_lower = comment.body.lower()
         comment_lower_list = comment_lower.split(" ")
@@ -38,10 +40,5 @@ for comment in subreddit.stream.comments():
                         comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
                 else:
                     comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
-            else:
-                requests.get(url='https://imdadbot.herokuapp.com/')
-                time.sleep(300)
-
-
         except:
             pass
