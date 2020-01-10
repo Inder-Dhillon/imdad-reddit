@@ -25,3 +25,4 @@ Now if someone in the future (_Hi future human, I'm Dad._) sees this and the acc
 
 **Edit:** Rate Limited to one comment per 2 minutes to not be as spammy, I don't want the account to go down.<br>
 **Edit 2:** People started to find it annoying, rate limiting to one comment every 20 minutes.
+**Edit 3:** I killed the project it was making some _questionable_ comments.
