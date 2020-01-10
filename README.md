@@ -23,5 +23,5 @@ Heres a visualization:
 I could rate limit it but people like it so **I'll let it go crazy**.
 Now if someone in the future (_Hi future human, I'm Dad._) sees this and the account is dead you know what happened.
 
-###### Edit: I killed the project it was making some _questionable_ comments. People want more dad jokes but unfortunately u/imdad_bot will not be the providing them.
+###### Edit: I killed the project because it was making some _questionable_ comments. People want more dad jokes but unfortunately u/imdad_bot will not be the providing them.
 ![demand](https://github.com/Inder-Dhillon/imdad-reddit/raw/master/examples/demand.PNG)
