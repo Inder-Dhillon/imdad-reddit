@@ -17,9 +17,7 @@ for comment in subreddit.stream.comments():
         comment_lower_list = comment_lower.split(" ")
 
         try:
-          blacklist = {'suicide','suicidal','abuse','abused','assault','sexual','sexually', 'rape', 'kill', 'raped', 'killing','divorce','victim','survivor'}
-          if set(comment_lower_list).isdisjoint(blacklist):
-            if "im" in comment_lower_list:
+           if "im" in comment_lower_list:
                 trigger_loc = comment_lower.find("im ") + 3
                 end_loc = comment_lower.find(".", trigger_loc)
                 if end_loc == -1:
@@ -32,9 +30,13 @@ for comment in subreddit.stream.comments():
                     comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
                 requests.get(url='https://imdadbot.herokuapp.com/')
                 time.sleep(1200)
+                requests.get(url='https://imdadbot.herokuapp.com/')
+                time.sleep(1200)
+                requests.get(url='https://imdadbot.herokuapp.com/')
+                time.sleep(1200)
 
 
-              elif "i'm" in comment_lower_list:
+             elif "i'm" in comment_lower_list:
                 trigger_loc = comment_lower.find("i'm ") + 4
                 end_loc = comment_lower.find(".", trigger_loc)
                 if end_loc == -1:
@@ -45,6 +47,10 @@ for comment in subreddit.stream.comments():
                         comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
                 else:
                     comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
+                requests.get(url='https://imdadbot.herokuapp.com/')
+                time.sleep(1200)
+                requests.get(url='https://imdadbot.herokuapp.com/')
+                time.sleep(1200)
                 requests.get(url='https://imdadbot.herokuapp.com/')
                 time.sleep(1200)
                 
