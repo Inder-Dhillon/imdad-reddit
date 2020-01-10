@@ -24,3 +24,4 @@ I could rate limit it but people like it so **I'll let it go crazy**.
 Now if someone in the future (_Hi future human, I'm Dad._) sees this and the account is dead you know what happened.
 
 **Edit:** Rate Limited to one comment per 2 minutes to not be as spammy, I don't want the account to go down.
+**Edit 2:** People started to find it annoying, rate limiting to one comment every 20 minutes.
