@@ -17,7 +17,7 @@ for comment in subreddit.stream.comments():
         comment_lower_list = comment_lower.split(" ")
 
         try:
-          blacklist = ['suicide','suicidal','abuse','abused','assault','sexual','sexually', 'rape', 'kill', 'raped', 'killing','divorce','victim','survivor']
+          blacklist = {'suicide','suicidal','abuse','abused','assault','sexual','sexually', 'rape', 'kill', 'raped', 'killing','divorce','victim','survivor'}
           if set(comment_lower_list).isdisjoint(blacklist):
             if "im" in comment_lower_list:
                 trigger_loc = comment_lower.find("im ") + 3
