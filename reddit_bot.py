@@ -1,6 +1,7 @@
 import praw
 from os import environ
 import requests
+import time
 
 reddit = praw.Reddit(client_id=environ['REDDIT_ID'],
                      client_secret=environ['REDDIT_SECRET'],
@@ -37,7 +38,10 @@ for comment in subreddit.stream.comments():
                         comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
                 else:
                     comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
+            else:
+                requests.get(url='https://imdadbot.herokuapp.com/')
+                time.sleep(300)
+
 
         except:
-            requests.get(url='https://imdadbot.herokuapp.com/')
             pass
