@@ -17,7 +17,7 @@ for comment in subreddit.stream.comments():
         comment_lower_list = comment_lower.split(" ")
 
         try:
-           if "im" in comment_lower_list:
+            if "im" in comment_lower_list:
                 trigger_loc = comment_lower.find("im ") + 3
                 end_loc = comment_lower.find(".", trigger_loc)
                 if end_loc == -1:
@@ -36,7 +36,7 @@ for comment in subreddit.stream.comments():
                 time.sleep(1200)
 
 
-             elif "i'm" in comment_lower_list:
+            elif "i'm" in comment_lower_list:
                 trigger_loc = comment_lower.find("i'm ") + 4
                 end_loc = comment_lower.find(".", trigger_loc)
                 if end_loc == -1:
