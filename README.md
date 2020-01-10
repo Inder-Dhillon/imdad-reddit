@@ -22,3 +22,5 @@ Heres a visualization:
 ![viz](https://github.com/Inder-Dhillon/imdad-reddit/raw/master/examples/viz.png)
 I could rate limit it but people like it so **I'll let it go crazy**.
 Now if someone in the future (_Hi future human, I'm Dad._) sees this and the account is dead you know what happened.
+
+**Edit:** Rate Limited to one comment per 5 minutes to not be as spammy
