@@ -15,6 +15,7 @@ for comment in subreddit.stream.comments():
     if reddit.user.me() != comment.author.name:
         comment_lower = comment.body.lower()
         comment_lower_list = comment_lower.split(" ")
+
         try:
             if "im" in comment_lower_list:
                 trigger_loc = comment_lower.find("im ") + 3
@@ -27,6 +28,10 @@ for comment in subreddit.stream.comments():
                         comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
                 else:
                     comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
+                requests.get(url='https://imdadbot.herokuapp.com/')
+                time.sleep(300)
+
+
             elif "i'm" in comment_lower_list:
                 trigger_loc = comment_lower.find("i'm ") + 4
                 end_loc = comment_lower.find(".", trigger_loc)
@@ -38,7 +43,8 @@ for comment in subreddit.stream.comments():
                         comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
                 else:
                     comment.reply("Hi " + comment.body[trigger_loc:end_loc] + ", I'm Dad👨")
+                requests.get(url='https://imdadbot.herokuapp.com/')
+                time.sleep(300)
+                
         except:
             pass
-        requests.get(url='https://imdadbot.herokuapp.com/')
-        time.sleep(300)
